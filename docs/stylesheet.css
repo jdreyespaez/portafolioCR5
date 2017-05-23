@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+}
+
+.container {
+  width: 1800px;
+  height: 100vh;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.section {
+  opacity: 0.65;
+  width: 450px;
+  height: 100%;
+  background-color: green;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+.section:hover {
+  width: 580px;
+}
+
+.title-section {
+
+}
+
+.click-target {
+  cursor: pointer;
+}
+
+.hidden-content {
+  display: none;
+}
+
+.blue {
+  background-color: #06F;
+  color: white;
+}
+
+.green {
+  background-color: #0f9d00;
+  color: white;
+}
+
+.red {
+  background-color: #F00;
+  color: white;
+}
+
+.yellow {
+  background-color: #ffea00;
+  color: white;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>  Intento 5 </title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="jquery.mousewheel.js"></script>
+  <script src="https://cdn.jsdelivr.net/mousewheel/3.1.13/jquery.mousewheel.js"></script>
+
+  <script>
+  $(function(){
+    $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+    $(".post").wrap("<td></td>");
+    $("body").mousewheel(function(event, delta) {
+      this.scrollLeft -= (delta * 1);
+      event.preventDefault();
+    });
+  });
+
+  $(document).ready(function () {
+    $(".click-target").click(function(){
+      $(this).parent().next(".hidden-content").slideToggle("slow");
+    });
+  });
+  </script>
+
+</head>
+<body>
+    <div class="container">
+
+      <div class="section blue">
+        <div class="title-section">
+            <h1 class="click-target">Caso 1</h1>
+        </div>
+        <div class="hidden-content">
+         <img src="http://placehold.it/350x150">
+         <p>Lorem ipsum dolor sit amet, audiam urbanitas pro et. Velit inani senserit sit cu, cu adhuc facilisi ius, ex vel voluptaria disputando. No has fabellas quaestio consectetuer, quod lorem adipiscing ex his. Vim ei noster numquam instructior.</p>
+         <p>Posse meliore constituam his id, eum at quot justo tibique. Ut qui stet omnium qualisque, feugait eleifend no eam. Sea no commune postulant. Ne sint voluptua sed, nostrum adversarium ut usu. Id ius inani eripuit periculis. Duo dolorem volumus ei, antiopam principes cum ut, qui elit recteque eu.</p>
+         <p>Mea at modo delenit, option iuvaret mel eu, mei an mundi noluisse. Sed ne eros tritani definiebas, everti maiestatis rationibus est id, cum et eripuit copiosae. Vim an erant tempor iudicabit. Facer iusto est in, ea vis ridens adipisci, assueverit interpretaris no usu. Eam at postea intellegebat, mucius deserunt ut eos.</p>
+        </div>
+      </div>
+      <div class="section green">
+        <div class="title-section">
+            <h1 class="click-target">Caso 2</h1>
+        </div>
+        <div class="hidden-content">
+         <img src="http://placehold.it/350x150">
+         <p>Lorem ipsum dolor sit amet, audiam urbanitas pro et. Velit inani senserit sit cu, cu adhuc facilisi ius, ex vel voluptaria disputando. No has fabellas quaestio consectetuer, quod lorem adipiscing ex his. Vim ei noster numquam instructior.</p>
+         <p>Posse meliore constituam his id, eum at quot justo tibique. Ut qui stet omnium qualisque, feugait eleifend no eam. Sea no commune postulant. Ne sint voluptua sed, nostrum adversarium ut usu. Id ius inani eripuit periculis. Duo dolorem volumus ei, antiopam principes cum ut, qui elit recteque eu.</p>
+         <p>Mea at modo delenit, option iuvaret mel eu, mei an mundi noluisse. Sed ne eros tritani definiebas, everti maiestatis rationibus est id, cum et eripuit copiosae. Vim an erant tempor iudicabit. Facer iusto est in, ea vis ridens adipisci, assueverit interpretaris no usu. Eam at postea intellegebat, mucius deserunt ut eos.</p>
+        </div>
+      </div>
+      <div class="section yellow">
+        <div class="title-section">
+            <h1 class="click-target">Caso 3</h1>
+        </div>
+        <div class="hidden-content">
+         <img src="http://placehold.it/350x150">
+         <p>Lorem ipsum dolor sit amet, audiam urbanitas pro et. Velit inani senserit sit cu, cu adhuc facilisi ius, ex vel voluptaria disputando. No has fabellas quaestio consectetuer, quod lorem adipiscing ex his. Vim ei noster numquam instructior.</p>
+         <p>Posse meliore constituam his id, eum at quot justo tibique. Ut qui stet omnium qualisque, feugait eleifend no eam. Sea no commune postulant. Ne sint voluptua sed, nostrum adversarium ut usu. Id ius inani eripuit periculis. Duo dolorem volumus ei, antiopam principes cum ut, qui elit recteque eu.</p>
+         <p>Mea at modo delenit, option iuvaret mel eu, mei an mundi noluisse. Sed ne eros tritani definiebas, everti maiestatis rationibus est id, cum et eripuit copiosae. Vim an erant tempor iudicabit. Facer iusto est in, ea vis ridens adipisci, assueverit interpretaris no usu. Eam at postea intellegebat, mucius deserunt ut eos.</p>
+        </div>
+      </div>
+      <div class="section red">
+        <div class="title-section">
+          <h1 class="click-target">Caso 4</h1>
+        </div>
+        <div class="hidden-content">
+          <img src="http://placehold.it/350x150">
+          <p>Lorem ipsum dolor sit amet, audiam urbanitas pro et. Velit inani senserit sit cu, cu adhuc facilisi ius, ex vel voluptaria disputando. No has fabellas quaestio consectetuer, quod lorem adipiscing ex his. Vim ei noster numquam instructior.</p>
+          <p>Posse meliore constituam his id, eum at quot justo tibique. Ut qui stet omnium qualisque, feugait eleifend no eam. Sea no commune postulant. Ne sint voluptua sed, nostrum adversarium ut usu. Id ius inani eripuit periculis. Duo dolorem volumus ei, antiopam principes cum ut, qui elit recteque eu.</p>
+          <p>Mea at modo delenit, option iuvaret mel eu, mei an mundi noluisse. Sed ne eros tritani definiebas, everti maiestatis rationibus est id, cum et eripuit copiosae. Vim an erant tempor iudicabit. Facer iusto est in, ea vis ridens adipisci, assueverit interpretaris no usu. Eam at postea intellegebat, mucius deserunt ut eos.</p>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>
